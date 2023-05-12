@@ -1,0 +1,32 @@
+{
+  "ssid": {
+    "open": {
+      "hide": "Lucifer",
+      "not_hide": "Redmi"
+    },
+    "secure": {
+      "hide": "TP-Link_2.4_HIDE",
+      "not_hide": "TP-Link_2.4_Secure",
+      "5G": "TP-Link_5G",
+      "5G_hotspot": "DjIndia"
+    }
+  },
+  "dns": {
+    "url1": "www.youtube.com",
+    "url2": "www.einfochips.com",
+    "url3": "www.google.com"
+  },
+  "password": {
+    "pwd": "12345678",
+    "open_pwd": "''"
+  },
+  "respose_operator":{
+    "wifi_init": "WiFi initialized",
+    "wifi_connect": "WiFi Connected",
+    "wifi_disconnect": "WiFi Disconnected",
+    "ip": "DHCP",
+    "dns_res": "All results received",
+    "error":"WiFi Dis-connection Failed. Err: -1",
+    "error2":"WiFi Connection Request Failedp"
+  }
+}
