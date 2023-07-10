@@ -1,0 +1,48 @@
+*** Settings ***
+Library		SeleniumLibrary
+Library		OperatingSystem
+Library		Collections
+Library		EnhancedHTTPLibrary
+Library		String
+Force Tags	Test-4
+Test TearDown	Log Browser State
+Suite TearDown	Close Browser
+# Author: Darshkumar.Chovatiya
+
+***Test Cases***
+Open Amazon
+	Open Browser	http://www.amazon.in/	Chrome	 www.amazon.in:http://127.0.0.1:4444/wd/hub
+	Maximize Browser Window
+	Wait Until Element Is Visible		css=span[class*='nav-logo-base']
+
+Enter Invalid Username Password | Verify Error
+	Click Element	//a[text()='Sign in securely']
+	Wait Until Element Is Visible	css=input[id*='email']
+	Input Text	css=input[id*='email']	Invaliduser
+	Press Keys 	 css=input[id*='email'] 	ENTER
+	Wait Until Element Is Visible	css=div[id*="auth-error-message-box"]
+	#Input Text	css=input[id*='password']	InvalidPassword
+	#Click Element	css=input[id='signInSubmit']
+	#Wait Until Element Is Visible	css=div[id*="auth-warning-message-box"]
+
+Login With Your Account
+	Go To 	http://www.amazon.in/
+	Wait Until Element Is Visible		css=span[class*='nav-logo-base']
+	Click Element	//a[text()='Sign in securely']
+	Wait Until Element Is Visible	css=input[id*='email']
+	Input Text	css=input[id*='email']	9099814491
+	Click Element 	 css=input[id*='continue'] 	
+	Input Text	css=input[id*='password']	jipa@1234
+	Click Element	css=input[id='signInSubmit']
+	Wait Until Element Is Visible		css=span[class*='nav-logo-base']
+
+***Keywords***
+Log Browser State
+	Run Keyword If Test Failed	Get Source Page
+	${random}=	Evaluate	random.randint(0, sys.maxsize)	random
+	Log	screenshot_${random}.png
+	Run Keyword If Test Failed	Capture Page Screenshot	screenshot_${random}.png
+
+Get Source Page
+	${source}	Get Source
+	Log	${source}

@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.0 on win32)" generated="20230525 10:37:02.382" rpa="false" schemaversion="2">
+<suite id="s1" name="Footer" source="C:\Users\158222\robot assignment\PHPTravels\module\footer.robot">
+<kw name="Open Browser and Login" library="common_keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230525 10:37:02.731" level="INFO">Opening browser 'Chrome' to base url 'https://phptravels.net/'.</msg>
+<status status="PASS" starttime="20230525 10:37:02.727" endtime="20230525 10:37:07.573"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230525 10:37:07.573" endtime="20230525 10:37:07.698"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:02.727" endtime="20230525 10:37:07.698"/>
+</kw>
+<test id="s1-t1" name="Validate Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:07.698" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:07.698" endtime="20230525 10:37:07.724"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:08.742" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:07.724" endtime="20230525 10:37:08.742"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ContactInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:08.742" level="INFO">Clicking element '(//a[@href='https://phptravels.net/contact'])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:37:08.742" endtime="20230525 10:37:11.820"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:11.820" endtime="20230525 10:37:13.796"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:14.810" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:13.796" endtime="20230525 10:37:14.810"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:07.698" endtime="20230525 10:37:14.810"/>
+</test>
+<test id="s1-t2" name="Validate Company">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:14.816" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:14.816" endtime="20230525 10:37:14.829"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:15.849" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:14.829" endtime="20230525 10:37:15.849"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CompanyInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:15.849" level="INFO">Clicking element '(//a[text()='Company '])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:37:15.849" endtime="20230525 10:37:16.983"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:16.983" endtime="20230525 10:37:18.921"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:37:18.923" endtime="20230525 10:37:19.026"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:14.814" endtime="20230525 10:37:19.027"/>
+</test>
+<test id="s1-t3" name="Validate About Us In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:19.028" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:19.028" endtime="20230525 10:37:19.039"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:20.048" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:19.039" endtime="20230525 10:37:20.048"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${AboutUsInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:20.050" level="INFO">Clicking element '(//a[@href='https://phptravels.net/about-us'])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:37:20.048" endtime="20230525 10:37:21.184"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:21.184" endtime="20230525 10:37:23.007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:37:23.007" endtime="20230525 10:37:23.084"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:19.028" endtime="20230525 10:37:23.084"/>
+</test>
+<test id="s1-t4" name="Validate Terms Of Use In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:23.092" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:23.092" endtime="20230525 10:37:23.108"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:24.114" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:23.108" endtime="20230525 10:37:24.114"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TermsInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:24.116" level="INFO">Clicking element '(//a[@href='https://phptravels.net/terms-of-use'])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:37:24.116" endtime="20230525 10:37:25.246"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:25.246" endtime="20230525 10:37:27.408"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:37:27.410" endtime="20230525 10:37:27.455"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:23.092" endtime="20230525 10:37:27.457"/>
+</test>
+<test id="s1-t5" name="Validate Cookies Policy In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:27.460" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:27.460" endtime="20230525 10:37:27.472"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:28.473" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:27.472" endtime="20230525 10:37:28.473"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CookiesInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:28.474" level="INFO">Clicking element '//a[@href='https://phptravels.net/cookies-policy']'.</msg>
+<status status="PASS" starttime="20230525 10:37:28.474" endtime="20230525 10:37:29.694"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:29.694" endtime="20230525 10:37:31.583"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:37:31.583" endtime="20230525 10:37:31.645"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:27.459" endtime="20230525 10:37:31.645"/>
+</test>
+<test id="s1-t6" name="Validate Privacy Policy In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:31.650" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:31.650" endtime="20230525 10:37:31.709"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:32.723" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:31.712" endtime="20230525 10:37:32.723"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PrivacyPolicy}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:32.724" level="INFO">Clicking element '//a[@href='https://phptravels.net/privacy-policy']'.</msg>
+<status status="PASS" starttime="20230525 10:37:32.724" endtime="20230525 10:37:33.873"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:33.873" endtime="20230525 10:37:35.671"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:37:35.675" endtime="20230525 10:37:35.737"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:31.649" endtime="20230525 10:37:35.745"/>
+</test>
+<test id="s1-t7" name="Validate Support In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:35.745" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:35.745" endtime="20230525 10:37:35.763"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:36.765" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:35.763" endtime="20230525 10:37:36.765"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SupportInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:36.767" level="INFO">Clicking element '//a[text()='Support ']'.</msg>
+<status status="PASS" starttime="20230525 10:37:36.765" endtime="20230525 10:37:37.829"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:37.829" endtime="20230525 10:37:39.759"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:37:39.759" endtime="20230525 10:37:39.839"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:35.745" endtime="20230525 10:37:39.839"/>
+</test>
+<test id="s1-t8" name="Validate Become Supplier In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:39.839" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:39.839" endtime="20230525 10:37:39.876"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:40.881" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:39.877" endtime="20230525 10:37:40.882"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BecomeSupplier}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:40.882" level="INFO">Clicking element '(//a[@href='https://phptravels.net/become-supplier'])'.</msg>
+<status status="PASS" starttime="20230525 10:37:40.882" endtime="20230525 10:37:41.946"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:41.946" endtime="20230525 10:37:43.752"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:44.257" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:37:43.752" endtime="20230525 10:37:44.257"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:39.839" endtime="20230525 10:37:44.257"/>
+</test>
+<test id="s1-t9" name="Validate FAQ In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:44.267" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:44.267" endtime="20230525 10:37:44.288"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:45.297" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:44.288" endtime="20230525 10:37:45.297"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FAQInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:45.297" level="INFO">Clicking element '(//a[@href='https://phptravels.net/faq'])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:37:45.297" endtime="20230525 10:37:46.356"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:46.358" endtime="20230525 10:37:48.253"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:49.262" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:48.253" endtime="20230525 10:37:49.262"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:44.257" endtime="20230525 10:37:49.262"/>
+</test>
+<test id="s1-t10" name="Validate Booking Tips In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:49.262" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:49.262" endtime="20230525 10:37:49.282"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:50.293" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:49.283" endtime="20230525 10:37:50.293"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${BookingTips}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:50.293" level="INFO">Clicking element '(//a[@href='https://phptravels.net/booking-tips'])'.</msg>
+<status status="PASS" starttime="20230525 10:37:50.293" endtime="20230525 10:37:51.408"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:51.408" endtime="20230525 10:37:53.690"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:54.696" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:53.690" endtime="20230525 10:37:54.696"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:49.262" endtime="20230525 10:37:54.696"/>
+</test>
+<test id="s1-t11" name="Validate How To Book In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:37:54.701" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:37:54.701" endtime="20230525 10:37:54.724"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:37:55.730" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:54.724" endtime="20230525 10:37:55.730"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HowToBook}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:37:55.732" level="INFO">Clicking element '(//a[@href='https://phptravels.net/how-to-book'])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:37:55.732" endtime="20230525 10:37:56.854"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:37:56.854" endtime="20230525 10:37:59.130"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:00.144" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:37:59.130" endtime="20230525 10:38:00.144"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:54.701" endtime="20230525 10:38:00.144"/>
+</test>
+<test id="s1-t12" name="Validate Services In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:00.148" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:00.148" endtime="20230525 10:38:00.165"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:00.674" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:00.165" endtime="20230525 10:38:00.674"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ServicesInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:00.674" level="INFO">Clicking element '//a[text()='Services ']'.</msg>
+<status status="PASS" starttime="20230525 10:38:00.674" endtime="20230525 10:38:01.784"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:38:01.784" endtime="20230525 10:38:03.958"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:04.470" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:03.963" endtime="20230525 10:38:04.470"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:00.148" endtime="20230525 10:38:04.472"/>
+</test>
+<test id="s1-t13" name="Validate File A Claim In Footer">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${fileClaim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:04.475" level="INFO">Clicking element '(//a[@href='https://phptravels.net/file-a-claim'])'.</msg>
+<status status="PASS" starttime="20230525 10:38:04.475" endtime="20230525 10:38:05.692"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:38:05.692" endtime="20230525 10:38:07.722"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:08.226" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:07.722" endtime="20230525 10:38:08.226"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:04.475" endtime="20230525 10:38:08.229"/>
+</test>
+<test id="s1-t14" name="Validate Offers In Footer">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:08.236" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:08.236" endtime="20230525 10:38:08.256"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:09.286" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:08.264" endtime="20230525 10:38:09.287"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OffersInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:09.288" level="INFO">Clicking element '(//a[@href='https://phptravels.net/offers'])[3]'.</msg>
+<status status="PASS" starttime="20230525 10:38:09.288" endtime="20230525 10:38:11.254"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:38:11.259" endtime="20230525 10:38:13.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:14.560" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:13.550" endtime="20230525 10:38:14.560"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:08.233" endtime="20230525 10:38:14.561"/>
+</test>
+<test id="s1-t15" name="Validate Services In Footer">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SignUpSupplier}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:14.563" level="INFO">Clicking element '(//a[@href='https://phptravels.net/signup-supplier'])[2]'.</msg>
+<status status="PASS" starttime="20230525 10:38:14.563" endtime="20230525 10:38:15.994"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:38:15.994" endtime="20230525 10:38:18.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:18.703" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:18.196" endtime="20230525 10:38:18.704"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Career}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:18.709" level="INFO">Clicking element '(//a[@href='https://phptravels.net/careers'])'.</msg>
+<status status="PASS" starttime="20230525 10:38:18.704" endtime="20230525 10:38:19.935"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230525 10:38:19.935" endtime="20230525 10:38:22.045"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:22.554" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:22.045" endtime="20230525 10:38:22.554"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:14.563" endtime="20230525 10:38:22.554"/>
+</test>
+<test id="s1-t16" name="Validate Footer Facebook Icon">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:22.554" endtime="20230525 10:38:22.575"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:22.575" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:22.575" endtime="20230525 10:38:22.608"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:23.623" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:22.608" endtime="20230525 10:38:23.623"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FacebookIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:23.623" level="INFO">Clicking element 'css=i[class='lab la-facebook']'.</msg>
+<status status="PASS" starttime="20230525 10:38:23.623" endtime="20230525 10:38:23.755"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:23.756" endtime="20230525 10:38:23.773"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FacebookPageAd}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:38:23.773" endtime="20230525 10:38:25.505"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CrossFacebookAd}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:25.505" level="INFO">Clicking element 'css=div[class='x92rtbv x10l6tqk x1tk7jg1 x1vjfegm']'.</msg>
+<status status="PASS" starttime="20230525 10:38:25.505" endtime="20230525 10:38:25.608"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${FacebookPageValidation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:38:25.609" endtime="20230525 10:38:25.653"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230525 10:38:25.653" endtime="20230525 10:38:25.714"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:26.230" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:25.718" endtime="20230525 10:38:26.230"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:22.554" endtime="20230525 10:38:26.231"/>
+</test>
+<test id="s1-t17" name="Validate Footer Twitter Icon">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:26.233" endtime="20230525 10:38:26.243"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:26.243" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:26.243" endtime="20230525 10:38:26.256"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:27.273" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:26.256" endtime="20230525 10:38:27.273"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TwitterIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:27.273" level="INFO">Clicking element 'css=i[class='lab la-twitter']'.</msg>
+<status status="PASS" starttime="20230525 10:38:27.273" endtime="20230525 10:38:27.411"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:27.412" endtime="20230525 10:38:27.429"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TwitterPageValidation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:38:27.430" endtime="20230525 10:38:30.899"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230525 10:38:30.900" endtime="20230525 10:38:30.966"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:31.473" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:30.969" endtime="20230525 10:38:31.473"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:26.233" endtime="20230525 10:38:31.473"/>
+</test>
+<test id="s1-t18" name="Validate Footer Youtube Icon">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:31.473" endtime="20230525 10:38:31.488"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:31.492" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:31.488" endtime="20230525 10:38:31.499"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:32.507" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:31.499" endtime="20230525 10:38:32.507"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${YoutubeIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:32.507" level="INFO">Clicking element 'css=i[class='lab la-youtube']'.</msg>
+<status status="PASS" starttime="20230525 10:38:32.507" endtime="20230525 10:38:32.628"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:32.628" endtime="20230525 10:38:32.650"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:33.657" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:32.650" endtime="20230525 10:38:33.657"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${YoutubePage}</arg>
+<arg>${YoutubePageText}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230525 10:38:33.657" level="INFO">Verifying element '(//div[@id='text-container'])[1]' contains exact text 'PHPTRAVELS'.</msg>
+<status status="PASS" starttime="20230525 10:38:33.657" endtime="20230525 10:38:36.229"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230525 10:38:36.230" endtime="20230525 10:38:36.304"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:36.822" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:36.306" endtime="20230525 10:38:36.822"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:31.473" endtime="20230525 10:38:36.822"/>
+</test>
+<test id="s1-t19" name="Validate Footer Whatsapp Icon">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:36.825" endtime="20230525 10:38:36.838"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:36.842" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:36.838" endtime="20230525 10:38:36.854"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:37.866" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:36.856" endtime="20230525 10:38:37.866"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${WhatsAppIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:37.866" level="INFO">Clicking element 'css=i[class='lab la-whatsapp']'.</msg>
+<status status="PASS" starttime="20230525 10:38:37.866" endtime="20230525 10:38:37.974"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:37.974" endtime="20230525 10:38:37.993"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${WhatsAppPage}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:38:37.997" endtime="20230525 10:38:39.631"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230525 10:38:39.635" endtime="20230525 10:38:39.695"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:40.219" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:39.695" endtime="20230525 10:38:40.219"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:36.825" endtime="20230525 10:38:40.222"/>
+</test>
+<test id="s1-t20" name="Validate Footer Instagram Icon">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:40.222" endtime="20230525 10:38:40.237"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:40.237" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:40.237" endtime="20230525 10:38:40.246"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:41.268" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:40.246" endtime="20230525 10:38:41.268"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${InstagramIcon}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:41.268" level="INFO">Clicking element 'css=i[class='lab la-instagram']'.</msg>
+<status status="PASS" starttime="20230525 10:38:41.268" endtime="20230525 10:38:41.385"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:41.385" endtime="20230525 10:38:41.404"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InstagramPageValidation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:38:41.404" endtime="20230525 10:38:44.759"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230525 10:38:44.759" endtime="20230525 10:38:44.825"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:45.330" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:44.825" endtime="20230525 10:38:45.330"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:40.222" endtime="20230525 10:38:45.330"/>
+</test>
+<test id="s1-t21" name="Validate PHPTRAVELS In Footer">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:45.334" endtime="20230525 10:38:45.343"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${ClickPHPTRAVELInFooter}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:45.343" level="INFO">Clicking button 'css=button[id='cookie_stop']'.</msg>
+<status status="PASS" starttime="20230525 10:38:45.343" endtime="20230525 10:38:45.449"/>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20230525 10:38:45.455" level="INFO">Executing JavaScript:
+document.querySelector("a[class='foot__logo waves-effect']").scrollIntoView(true)
+Without any arguments.</msg>
+<status status="PASS" starttime="20230525 10:38:45.454" endtime="20230525 10:38:45.465"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:46.479" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230525 10:38:45.465" endtime="20230525 10:38:46.479"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ClickLinkInFooter}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:46.480" level="INFO">Clicking element '//a[@href='http://www.phptravels.com']'.</msg>
+<status status="PASS" starttime="20230525 10:38:46.480" endtime="20230525 10:38:46.586"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>NEW</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:46.586" endtime="20230525 10:38:46.604"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${ValidateInNewTab}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230525 10:38:46.604" endtime="20230525 10:38:49.616"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230525 10:38:49.616" endtime="20230525 10:38:49.680"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230525 10:38:50.185" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230525 10:38:49.680" endtime="20230525 10:38:50.185"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:45.334" endtime="20230525 10:38:50.185"/>
+</test>
+<test id="s1-t22" name="Validate Up Arrow">
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>MAIN</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230525 10:38:50.188" endtime="20230525 10:38:50.195"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ValidateUpArrow}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230525 10:38:50.195" level="INFO">Clicking element 'css=i[title='Go top']'.</msg>
+<status status="PASS" starttime="20230525 10:38:50.195" endtime="20230525 10:38:50.282"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:50.188" endtime="20230525 10:38:50.282"/>
+</test>
+<kw name="Sign Out And Close Browser" library="common_keywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230525 10:38:50.294" endtime="20230525 10:38:52.650"/>
+</kw>
+<status status="PASS" starttime="20230525 10:38:50.294" endtime="20230525 10:38:52.650"/>
+</kw>
+<status status="PASS" starttime="20230525 10:37:02.382" endtime="20230525 10:38:52.650"/>
+</suite>
+<statistics>
+<total>
+<stat pass="22" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="22" fail="0" skip="0" id="s1" name="Footer">Footer</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230525 10:37:02.716" level="WARN">Imported library 'C:\Users\158222\robot assignment\PHPTravels\common\extendedLibrary.py' contains no keywords.</msg>
+<msg timestamp="20230525 10:38:14.563" level="WARN">Multiple test cases with name 'Validate Services In Footer' executed in test suite 'Footer'.</msg>
+</errors>
+</robot>
