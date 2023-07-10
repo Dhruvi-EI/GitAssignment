@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.0 on win32)" generated="20230706 14:42:32.785" rpa="false" schemaversion="2">
+<suite id="s1" name="Trains" source="C:\Users\158222\robot assignment\MakeMytrip\MakemyTrip\module1\trains.robot">
+<kw name="Open Browser and Login" library="common_keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230706 14:42:33.009" level="INFO">Opening browser 'Chrome' to base url 'https://www.makemytrip.com/'.</msg>
+<status status="PASS" starttime="20230706 14:42:33.009" endtime="20230706 14:42:36.484"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230706 14:42:36.484" endtime="20230706 14:42:36.698"/>
+</kw>
+<status status="PASS" starttime="20230706 14:42:33.009" endtime="20230706 14:42:36.699"/>
+</kw>
+<test id="s1-t1" name="Validate Trains Tab">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainsTab}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:36.703" level="INFO">Clicking element '(//span[@class='chNavText darkGreyText'])[5]'.</msg>
+<status status="PASS" starttime="20230706 14:42:36.702" endtime="20230706 14:42:37.037"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${TrainsTab}</arg>
+<arg>${TrainsTabText}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20230706 14:42:37.045" level="INFO">Verifying element '(//span[@class='chNavText darkGreyText'])[5]' contains exact text 'Trains'.</msg>
+<status status="PASS" starttime="20230706 14:42:37.045" endtime="20230706 14:42:37.067"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TrainsFrom}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:37.067" endtime="20230706 14:42:37.421"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainsFrom}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:37.421" level="INFO">Clicking element 'css=span[data-cy='fromCityLabel']'.</msg>
+<status status="PASS" starttime="20230706 14:42:37.421" endtime="20230706 14:42:37.655"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${TrainsFromInput}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:37.655" endtime="20230706 14:42:37.972"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainsFromInput}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:37.972" level="INFO">Clicking element 'css=input[placeholder='From']'.</msg>
+<status status="PASS" starttime="20230706 14:42:37.972" endtime="20230706 14:42:38.098"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectFirstStation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:38.101" level="INFO">Clicking element '//span[text()='New Delhi Railway Station']'.</msg>
+<status status="PASS" starttime="20230706 14:42:38.100" endtime="20230706 14:42:38.212"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainsTo}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:38.214" level="INFO">Clicking element 'css=input[placeholder='To']'.</msg>
+<status status="PASS" starttime="20230706 14:42:38.212" endtime="20230706 14:42:38.292"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SelectSecondStation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:38.292" endtime="20230706 14:42:38.569"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectSecondStation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:38.569" level="INFO">Clicking element '//span[text()='Kolkata Howrah Junction']'.</msg>
+<status status="PASS" starttime="20230706 14:42:38.569" endtime="20230706 14:42:38.701"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainTravelDate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:38.701" level="INFO">Clicking element 'css=input[id='travelDate']'.</msg>
+<status status="PASS" starttime="20230706 14:42:38.701" endtime="20230706 14:42:38.785"/>
+</kw>
+<kw name="Select Date" library="extendedLibrary">
+<var>${Checkout}</var>
+<arg>3</arg>
+<msg timestamp="20230706 14:42:38.785" level="INFO">${Checkout} = 9</msg>
+<status status="PASS" starttime="20230706 14:42:38.785" endtime="20230706 14:42:38.785"/>
+</kw>
+<kw name="Replace String" library="String">
+<var>${CheckOutDate}</var>
+<arg>(//div[text()='DATE'])[1]</arg>
+<arg>DATE</arg>
+<arg>${Checkout}</arg>
+<doc>Replaces ``search_for`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20230706 14:42:38.785" level="INFO">${CheckOutDate} = (//div[text()='9'])[1]</msg>
+<status status="PASS" starttime="20230706 14:42:38.785" endtime="20230706 14:42:38.785"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CheckOutDate}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:38.785" level="INFO">Clicking element '(//div[text()='9'])[1]'.</msg>
+<status status="PASS" starttime="20230706 14:42:38.785" endtime="20230706 14:42:38.872"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainClass}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:38.872" level="INFO">Clicking element '//span[text()='Class']'.</msg>
+<status status="PASS" starttime="20230706 14:42:38.872" endtime="20230706 14:42:38.969"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SelectClass}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:38.969" endtime="20230706 14:42:39.003"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectClass}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:39.003" level="INFO">Clicking element 'css=li[data-cy='3A']'.</msg>
+<status status="PASS" starttime="20230706 14:42:39.003" endtime="20230706 14:42:39.092"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SearchTrainsButton}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:39.094" level="INFO">Clicking element 'css=a[class='primaryBtn font24 latoBold widgetSearchBtn']'.</msg>
+<status status="PASS" starttime="20230706 14:42:39.094" endtime="20230706 14:42:41.240"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SearchedTrainsValidation}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:41.240" endtime="20230706 14:42:41.287"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${TrainsHome}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230706 14:42:41.290" level="INFO">Opening url 'https://www.makemytrip.com/railways/'</msg>
+<status status="PASS" starttime="20230706 14:42:41.289" endtime="20230706 14:42:42.470"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:42.470" endtime="20230706 14:42:42.528"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PNRStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:42.536" level="INFO">Clicking element 'css=span[data-cy='checkPnrStatus']'.</msg>
+<status status="PASS" starttime="20230706 14:42:42.536" endtime="20230706 14:42:42.812"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ValidatePNRStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:42.812" level="INFO">Clicking element 'css=input[id='pnr']'.</msg>
+<status status="PASS" starttime="20230706 14:42:42.812" endtime="20230706 14:42:42.954"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${ValidatePNRStatus}</arg>
+<arg>${PNRNumber}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:42.954" level="INFO">Typing text '8848466855' into text field 'css=input[id='pnr']'.</msg>
+<status status="PASS" starttime="20230706 14:42:42.954" endtime="20230706 14:42:43.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CheckStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:43.079" level="INFO">Clicking element '//a[text()='CHECK STATUS']'.</msg>
+<status status="PASS" starttime="20230706 14:42:43.079" endtime="20230706 14:42:44.188"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${TrainsHome}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230706 14:42:44.188" level="INFO">Opening url 'https://www.makemytrip.com/railways/'</msg>
+<status status="PASS" starttime="20230706 14:42:44.188" endtime="20230706 14:42:45.354"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${LiveStatus}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:45.354" endtime="20230706 14:42:45.443"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LiveStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:45.451" level="INFO">Clicking element 'css=span[data-cy='liveTrainStatus']'.</msg>
+<status status="PASS" starttime="20230706 14:42:45.451" endtime="20230706 14:42:45.708"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainNumber}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:45.710" level="INFO">Clicking element 'css=input[id='trainNum']'.</msg>
+<status status="PASS" starttime="20230706 14:42:45.710" endtime="20230706 14:42:45.871"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${InputTrainNumber}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:45.871" endtime="20230706 14:42:46.676"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${InputTrainNumber}</arg>
+<arg>${TrainName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:46.676" level="INFO">Typing text 'lokshakti' into text field 'css=input[class*='autosuggest__input ']'.</msg>
+<status status="PASS" starttime="20230706 14:42:46.676" endtime="20230706 14:42:46.825"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230706 14:42:47.839" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230706 14:42:46.825" endtime="20230706 14:42:47.839"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SelectTrain}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:47.839" endtime="20230706 14:42:47.889"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectTrain}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:47.892" level="INFO">Clicking element '(//span[@class='sr_city blackText'])[1]'.</msg>
+<status status="PASS" starttime="20230706 14:42:47.892" endtime="20230706 14:42:48.002"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${YourStop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:48.004" level="INFO">Clicking element '//span[text()='Your Stop']'.</msg>
+<status status="PASS" starttime="20230706 14:42:48.003" endtime="20230706 14:42:48.089"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SelectStop}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:48.089" endtime="20230706 14:42:48.347"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelectStop}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:48.356" level="INFO">Clicking element '//span[text()='Bandra Terminus']'.</msg>
+<status status="PASS" starttime="20230706 14:42:48.355" endtime="20230706 14:42:48.526"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${TrainStartDay}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:48.526" level="INFO">Clicking element '//span[text()='TRAIN START DATE']'.</msg>
+<status status="PASS" starttime="20230706 14:42:48.526" endtime="20230706 14:42:48.634"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${SelStartDay}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:48.634" endtime="20230706 14:42:48.675"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SelStartDay}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:48.675" level="INFO">Clicking element '//span[text()='Tomorrow']'.</msg>
+<status status="PASS" starttime="20230706 14:42:48.675" endtime="20230706 14:42:48.810"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CheckStatus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230706 14:42:48.810" level="INFO">Clicking element '//a[text()='CHECK STATUS']'.</msg>
+<status status="PASS" starttime="20230706 14:42:48.810" endtime="20230706 14:42:50.214"/>
+</kw>
+<kw name="Go Back" library="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230706 14:42:50.215" endtime="20230706 14:42:51.374"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Logo}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230706 14:42:51.375" endtime="20230706 14:42:51.459"/>
+</kw>
+<status status="PASS" starttime="20230706 14:42:36.699" endtime="20230706 14:42:51.459"/>
+</test>
+<kw name="Sign Out And Close Browser" library="common_keywords" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230706 14:42:51.464" endtime="20230706 14:42:53.646"/>
+</kw>
+<status status="PASS" starttime="20230706 14:42:51.464" endtime="20230706 14:42:53.646"/>
+</kw>
+<status status="PASS" starttime="20230706 14:42:32.787" endtime="20230706 14:42:53.646"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Trains">Trains</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
